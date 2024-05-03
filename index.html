@@ -7,58 +7,59 @@
       <meta charset="UTF-8">
       <meta name="viewport" content="width=device-width, initial-scale=1.0">
       <title>Receitas pelo mundo</title>
-      <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon">  <!-- Logo da página --> 
+      <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon">  <!-- Logo da página -->
+      <link rel="stylesheet" href="estilo.css">
     </head>
     <body>
       <header>
         <!-- Aqui temos o nosso header onde contém o redirecionamento para as demais páginas: Home, Sobre Nós e contatos e a logo do projeto. -->
-        <nav>    
-        <img src="imagens/RECEITAS PELO MUNDO.png" alt="" width="500">
-        <br>     
-          <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre Nós</a>
-          <a href="contato.html">Contato</a>
+        <nav  id="cabecalho">    
+        <img id="logo" src="imagens/RECEITAS PELO MUNDO.png" alt="" width="500">
+        <a class="cabecalho_links" href="index.html">Home</a>
+        <a class="cabecalho_links" href="sobre.html">Sobre Nós</a>
+        <a class="cabecalho_links" href="contato.html">Contato</a>
         </nav>
       </header>
-        <main>
+        <main id="conteudo_principal">
 
         <div>
             <!-- Nome e introdução do site -->
-            <h1>Receitas pelo mundo</h1>
-            <h2>Introdução</h2>
-            <p>O blog Receitas pelo mundo é um site de receitas de diversos lugares do mundo
+            <h1 id="blog">Receitas pelo mundo</h1>
+            <h2 id="introducao">Introdução</h2>
+            <p id="introducao_texto">O blog Receitas pelo mundo é um site de receitas de diversos lugares do mundo
             <br> Buscamos presentear nossos leitores com a maior variedade de Receitas.</p>
-            <hr>
+            <br>
+              
         </div>
         <article>
             <!-- Nossas receitas -->
             <h1>Nossas Receitas</h1>
             <hr>
         </article>
-        <section>
+        <section id="receitas">
             <!-- section contendo nossas os links que redirecionam para as nossas receitas -->
             
             <nav>
                 <!-- nav que redireciona para a receita de massa de panqueca -->
                 
-                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BJwyPqYVUGCXeo7JM13CWWtWp2nNNYeyAw&s" alt="massa de panqueca" width="300">
+                <img src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ1BJwyPqYVUGCXeo7JM13CWWtWp2nNNYeyAw&s" alt="massa de panqueca" width="300" height="200">
                 <br>
-                <a href="panqueca.html">Massa de Panqueca</a></li> <p>Nessa Receita, te ensinamos a fazer massa de panqueca </p>
-                <hr>  
+                <a href="panqueca.html">Massa de Panqueca</a></li>
+                  
             </nav>
             <nav>
                 <!-- nav que redireciona para a receita de Bolo Formigueiro -->
-                <img src="https://assets.unileversolutions.com/recipes-v2/214857.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center" alt="Bolo Formigueiro" width="300">
+                <img src="https://assets.unileversolutions.com/recipes-v2/214857.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center" alt="Bolo Formigueiro" width="300" height="200">
                 <br>
-                <a href="Bolo-formigueiro.html">Bolo Formigueiro</a></li> <p>Nessa Receita, te ensinamos a fazer Bolo Formigueiro</p>
-                <hr>  
+                <a href="Bolo-formigueiro.html">Bolo Formigueiro</a></li>
+                 
             </nav>
             <nav>
                 <!-- nav que redireciona para a receita de Minguau -->
-                <img src="https://assets.unileversolutions.com/recipes-v2/237400.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center" alt="Minguau" width="300">
+                <img src="https://assets.unileversolutions.com/recipes-v2/237400.jpg?im=Resize,height=372;Crop,size=(932,372),gravity=Center" alt="Minguau" width="300" height="200">
                 <br>
-                <a href="Mingau.html">Mingau</a></li> <p>Nessa Receita, te ensinamos a fazer Mingau</p>
-                <hr>  
+                <a href="Mingau.html">Mingau</a></li>
+                
             </nav>
         </section>
 
