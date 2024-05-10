@@ -52,3 +52,16 @@
 {
     font-size: 30px;
 }
+footer
+{
+    background-color: red;
+    font-size: 20px;
+    padding:25px 5px;
+    color: yellow;
+}
+.links_receitas
+{
+    text-decoration: none;
+    color:black;
+    font-size: 25px;
+}
