@@ -1,67 +1,162 @@
-<!-- Trabalho de PW - Blog de Receitas  
-    realizado pelos alunos: Pedro Zago, Pietro Gimenez e Pedro Rodrigues
-    Data: 12/04/2024  -->
 <!DOCTYPE html>
-<html lang="pt-br">
+<html lang="en">
+
 <head>
+    <meta name="description" content="receitas">
+    <meta name="keywords" content="receitas">
+    <meta name="author" content="Pietro Gimenez, Pedro Rodrigues, Pedro Zago">
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title></title>
+    <title>Receitas pelo mundo</title>
+    <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon"> <!-- Logo da página -->
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
 </head>
+
 <body>
-    <!-- aqui temos o header que comtem o redirecionando para as nossas outras paginas -->
     <header>
-          <a href="index.html">Home</a>
-          <a href="sobre.html">Sobre Nós</a>
-          <a href="contato.html">Contato</a>
+        <!-- header responsivo -->
+        <nav class="navbar navbar-dark navbar-fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">Receitas pelo mundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Receitas Pelo Mundo</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="sobre.html">Quem somos: </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="contato.html">Contate-nos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="jogo.html">jogo js</a>
+                            </li>
+                    </div>
+                </div>
+                <a href="#"><img id="Logo" src="imagens/RECEITAS PELO MUNDO.png" alt=""></a>
+            </div>
         </nav>
-      </header>
+    </header>
     <main>
-        <!-- aqui temos o titulo da pagina -->
-        <h1>Sobre nós</h1>
-        <br><br>
-        <!-- tabela de 2 colunas -->
-        <table border="2">
-    
-            <tr>
-                <!--aqui temos a lista com nossos nomes e informações  -->
-                <th><h1>Pietro Gimenez</h1></th>
-                <th><h1>Descrição</h1></th>
-            </tr>
-    
-            <tr>
-                <!-- aqui temos a foto e a descrição do Pietro Gimenez -->
-                <td><img src="imagens/Pietro.jpeg" alt="Pietro Gimenez"  width="230" height="300"></td>
-                <td><h1>Sou o Pietro Gimenez, tenho 14 anos gosto de jogar futebol e volei, gosto de estudar programação e atualmente estou estudando html e css atualmente sou aluna da etec polivalente americana e faço o curso de ds em parceria com a fatec, atualmente falo inglês e ganhei menção honrosa da OBMEP em 2021</h1></td>
-            </tr>
-    
-            <tr>
-                <th><h1>Pedro Zago</h1></th>
-                <th><h1>Descrição</h1></th>
-            </tr>
-    
-            <tr>
-                <!-- aqui temos a foto e descrição do Pedro Zago -->
-                <td><img src="imagens/Pedro Zago.jpeg" alt="Pedro Zago"  width="230" height="300"></td>
-                <td><h1>Eu sou Pedro Zago tenho 14 anos, estou cursando o curso de AMS  de Desenvolvimento de sistema na Etec Polivalente na Fatec. Falo inglês desde os 7 anos, fui medalhista de bronze da OBMEP, gosto de animes, ler, me dou bem com todas as áreas de conhecimento</h1></td>
-            </tr>
-            <tr>
-                <th><h1>Pedro Aguiar</h1></th>
-                <th><h1>Descrição</h1></th>
-            </tr>
-            <tr>
-                <!-- aqui temos a foto e decrição de Pedro Aguiar -->
-                <td><img src="imagens/Pedro Aguiar.jpeg" alt="Pedro Aguiar"  width="230" height="300"></td>
-                <td><h1>Sou o Pedro Aguiar,tenho 15 anos e atualmente estou estudando no curso de DS na Etec polivalente e estou usando meu tempo livre para melhorar meu inglês. Gosto de ler livro e HQs e jogar jogos com meus amigos nos fins de semana</h1></td>
-            </tr>
-        </table>
-        <br>
-        <hr>
+        <!-- conteudo pra mobile -->
+        <div id="conteudo-moba" class="quem">
+            <h1 class="central">Integrantes: </h1>
+            <!-- card Pietro Gimenez -->
+            <div class="card">
+                <img src="imagens/Pietro gimenez.jpg" class="d-block w-100 , card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pietro Gimenez</h5>
+                    <p class="card-text">Olá sou Pietro Gimenez e gosto de jogar, meu nivel em inglês é
+                        intermediario/avançado e estou cada vez mais tentando ser alguem melhor.</p>
+                </div>
+            </div>
+            <!-- card zago -->
+            <div class="card">
+                <img src="imagens/zago2.jpg" class="d-block w-100 , card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pedro Zago</h5>
+                    <p class="card-text">Aluno do ensino médio, Fatec, 15 anos de idade, nível avançado em inglês e
+                        intermediário em espanhol
+                    </p>
+                </div>
+            </div>
+            <!-- Pedro Rodrigues -->
+            <div class="card">
+                <img src="imagens/Rodruigues 2.jpg" class="d-block w-100 , card-img-top" alt="...">
+                <div class="card-body">
+                    <h5 class="card-title">Pedro Rodrigues</h5>
+                    <p class="card-text">Aluno do ensino médio, Fatec, 15 anos de idade, nível intermediario em inglês e
+                        gosto de ler e jogar</p>
+                </div>
+            </div>
+        </div>
+        <!-- conteudo pra tablet e desktop -->
+        <section id="conteudo-tablet" class="quem">
+            <h1 class="central">Integrantes: </h1>
+            <div class="flex_wrap">
+                <!-- card Pietro Gimenez -->
+                <div class="card">
+                    <img src="imagens/Pietro gimenez.jpg" class="d-block w-100 , card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pietro Gimenez</h5>
+                        <p class="card-text">Olá sou Pietro Gimenez e gosto de jogar, meu nivel em inglês é
+                            intermediario/avançado e estou cada vez mais tentando ser alguem melhor.</p>
+                    </div>
+                </div>
+                <!-- card Zago -->
+                <div class="card">
+                    <img src="imagens/zago2.jpg" class="d-block w-100 , card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedro Zago</h5>
+                        <p class="card-text">Aluno do ensino médio, Fatec, 15 anos de idade, nível avançado em inglês e
+                            intermediário em espanhol
+                        </p>
+                    </div>
+                </div>
+                <!-- Pedro Rodrigues -->
+                <div class="card">
+                    <img src="imagens/Rodruigues 2.jpg" class="d-block w-100 , card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pedro Rodrigues</h5>
+                        <p class="card-text">Aluno do ensino médio, Fatec, 15 anos de idade, nível intermediario em
+                            inglês e gosto de ler e jogar</p>
+                    </div>
+                </div>
+            </div>
+        </section>
     </main>
     <footer>
-        <!-- aqui temos o footer explicando os intuito do nosso blog -->
-        <p>Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de Americana e tem como a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS</p>
-
+        <!-- links footer -->
+        <h3 class="central">Links Uteis</h3>
+        <br>
+        <section id="footerLinks" class="d-flex justify-content-around">
+            <a href="">
+                <h5>(19) 99354-1162</h5>
+            </a>
+            <a href="">
+                <h5>Receitas deliciosas</h5>
+            </a>
+            <a href="">
+                <h5>Receitas Diversas</h5>
+            </a>
+        </section>
+        <br>
+        <section id="footerLinks" class="d-flex justify-content-around">
+            <a href="">
+                <h5>Politica de privacidade</h5>
+            </a>
+            <a href="">
+                <h5>Termos de uso</h5>
+            </a>
+        </section>
+        <br>
+        <hr>
+        <!-- logo footer -->
+        <div id="logoFooter"><img src="imagens/RECEITAS PELO MUNDO.png" alt=""></div>
+        <section id="footerLinks" class="d-flex justify-content-around">
+            <a href="">
+                <h6>Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de
+                    Americana e tem como a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS</h6>
+            </a>
+        </section>
+        <br>
     </footer>
 </body>
+
 </html>

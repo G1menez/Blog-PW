@@ -1,0 +1,289 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="description" content="receitas">
+    <meta name="keywords" content="receitas">
+    <meta name="author" content="Pietro Gimenez, Pedro Rodrigues, Pedro Zago">
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Receitas pelo mundo</title>
+    <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon"> <!-- Logo da página -->
+    <link rel="stylesheet" href="estilo.css">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <!-- header responsivo -->
+        <nav class="navbar navbar-dark navbar-fixed-top navbar-expand-md">
+            <div class="container-fluid">
+                <a class="navbar-brand me-auto" href="#">Receitas pelo mundo</a>
+                <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                    data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                    aria-label="Toggle navigation">
+                    <span class="navbar-toggler-icon"></span>
+                </button>
+                <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                    aria-labelledby="offcanvasDarkNavbarLabel">
+                    <div class="offcanvas-header">
+                        <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Receitas Pelo Mundo</h5>
+                        <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                            aria-label="Close"></button>
+                    </div>
+                    <div class="offcanvas-body">
+                        <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 nav-underline">
+                            <li class="nav-item">
+                                <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="sobre.html">Quem somos: </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="contato.html">Contate-nos </a>
+                            </li>
+                            <li class="nav-item">
+                                <a class="nav-link mx-lg-2" href="jogo.html">jogo js</a>
+                            </li>
+                    </div>
+                </div>
+                <a href="#"><img id="Logo" src="imagens/RECEITAS PELO MUNDO.png" alt=""></a>
+            </div>
+        </nav>
+    </header>
+    <main>
+        <!-- section conteudo receita pra mobile -->
+        <section id="conteudo-moba">
+            <h1 class="central">Como Fazer Feijoada:</h1>
+            <img src="imagens/Feijoada.jpg" alt="" class="img_rec">
+            <!-- accordion com ingredientes e Passo a passo -->
+            <div class="accordion" id="accordionExample">
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+                            <h3>Ingredientes:</h3>
+                        </button>
+                    </h2>
+                    <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <!-- ingredientes para 8 porções -->
+                            <h5>8 porções</h5>
+                            <ul>
+                                <li>1 kg de feijão preto
+                                </li>
+                                <li>2 línguas defumadas ou salgadas
+                                </li>
+                                <li>1 kg de carne seca
+                                </li>
+                                <li>1/2 kg de costelinha de porco salgada
+                                </li>
+                                <li>1/2 kg de lombo de porco salgado
+                                </li>
+                                <li>1/2 kg de lingüiça calabresa defumada
+                                </li>
+                                <li>1/4 kg de toucinho defumado
+                                </li>
+                                <li>2 pés de porco salgados
+                                </li>
+                                <li>1 rabo de porco salgado
+                                </li>
+                                <li>2 orelhas de porco salgadas
+                                </li>
+                                <li>3 cebolas cortadas em cubos
+                                </li>
+                                <li>3 dentes de alho picados
+                                </li>
+                                <li>4 folhas de louro
+                                </li>
+                                <li>Pimenta malagueta amassada (opcional)
+                                </li>
+                                <li>1/2 xícara de óleo ou banha de porco
+                                </li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion-item">
+                    <h2 class="accordion-header">
+                        <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                            data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+                            <!-- modo de preparo -->
+                            <h3>Modo de Preparo</h3>
+                        </button>
+                    </h2>
+                    <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                        <div class="accordion-body">
+                            <h5>Modo de preparo</h5>
+                            <ol>
+                                <li>deixe o feijão de molho por 12 horas.
+                                </li>
+                                <li>Lave bem as carnes salgadas, corte em pedaços e deixe de molho em água por 12 horas,
+                                    trocando a água pelo menos duas vezes.
+                                </li>
+                                <li>Coloque o feijão para cozinhar em bastante água com as folhas de louro.
+                                </li>
+                                <li>Em uma panela à parte, cozinhe por ½ hora as carnes salgadas, escorra a água e
+                                    reserve.
+                                </li>
+                                <li>Quando o feijão estiver começando a amolecer, coloque as carnes, a lingüiça e o paio
+                                    e deixe ferver em fogo brando até estar tudo bem cozido (leva algum tempo: de 2 a 3
+                                    horas).
+                                </li>
+                                <li>Esquente o óleo ou banha de porco e refogue os temperos.
+                                </li>
+                                <li>Coloque uma concha do feijão, amasse bem e deixe ferver despeje na feijoada e deixe
+                                    ferver por mais 30 minutos.
+                                </li>
+                                <li>Sirva bem quente acompanhado de couve picada fina e refogada, farinha de mandioca
+                                    crua, gomos de laranja e uma cerveja bem gelada.
+                                </li>
+                            </ol>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+        <!-- section conteudo receita pra +600px -->
+        <section id="conteudo-tablet" class="quem">
+            <h1 class="central">Como Fazer Feijoada:</h1>
+            <img src="imagens/Feijoada.jpg" alt="" class="img_rec">
+            <!-- article pra aplicar wrap -->
+            <article class="flex_wrap">
+                <!-- accordion com ingredientes e Passo a passo -->
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h2 class="accordion-header">
+                            <button class="accordion-button" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseOne" aria-controls="collapseOne">
+                                <h3>Ingredientes:</h3>
+                            </button>
+                        </h2>
+                        <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <!-- ingredientes pra 8 porções -->
+                                <h5>8 porções</h5>
+                                <ul>
+                                    <li>1 kg de feijão preto
+                                    </li>
+                                    <li>2 línguas defumadas ou salgadas
+                                    </li>
+                                    <li>1 kg de carne seca
+                                    </li>
+                                    <li>1/2 kg de costelinha de porco salgada
+                                    </li>
+                                    <li>1/2 kg de lombo de porco salgado
+                                    </li>
+                                    <li>1/2 kg de lingüiça calabresa defumada
+                                    </li>
+                                    <li>1/4 kg de toucinho defumado
+                                    </li>
+                                    <li>2 pés de porco salgados
+                                    </li>
+                                    <li>1 rabo de porco salgado
+                                    </li>
+                                    <li>2 orelhas de porco salgadas
+                                    </li>
+                                    <li>3 cebolas cortadas em cubos
+                                    </li>
+                                    <li>3 dentes de alho picados
+                                    </li>
+                                    <li>4 folhas de louro
+                                    </li>
+                                    <li>Pimenta malagueta amassada (opcional)
+                                    </li>
+                                    <li>1/2 xícara de óleo ou banha de porco
+                                    </li>
+                                </ul>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                        <h3 class="accordion-header">
+                            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                                data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                                <h3>Modo de Preparo</h3>
+                            </button>
+                        </h3>
+                        <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+                            <div class="accordion-body">
+                                <h5>Modo de preparo</h5>
+                                <ol>
+                                    <li>deixe o feijão de molho por 12 horas.
+                                    </li>
+                                    <li>Lave bem as carnes salgadas, corte em pedaços e deixe de molho em água por 12
+                                        horas,
+                                        trocando a água pelo menos duas vezes.
+                                    </li>
+                                    <li>Coloque o feijão para cozinhar em bastante água com as folhas de louro.
+                                    </li>
+                                    <li>Em uma panela à parte, cozinhe por ½ hora as carnes salgadas, escorra a água e
+                                        reserve.
+                                    </li>
+                                    <li>Quando o feijão estiver começando a amolecer, coloque as carnes, a lingüiça e o
+                                        paio
+                                        e deixe ferver em fogo brando até estar tudo bem cozido (leva algum tempo: de 2
+                                        a 3
+                                        horas).
+                                    </li>
+                                    <li>Esquente o óleo ou banha de porco e refogue os temperos.
+                                    </li>
+                                    <li>Coloque uma concha do feijão, amasse bem e deixe ferver despeje na feijoada e
+                                        deixe
+                                        ferver por mais 30 minutos.
+                                    </li>
+                                    <li>Sirva bem quente acompanhado de couve picada fina e refogada, farinha de
+                                        mandioca
+                                        crua, gomos de laranja e uma cerveja bem gelada.
+                                    </li>
+                                </ol>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </article>
+        </section>
+    </main>
+    <footer>
+        <!-- footer links -->
+        <h3 class="central">Links Uteis</h3>
+        <br>
+        <section id="footerLinks" class="d-flex justify-content-around">
+            <a href="">
+                <h5>(19) 99354-1162</h5>
+            </a>
+            <a href="">
+                <h5>Receitas deliciosas</h5>
+            </a>
+            <a href="">
+                <h5>Receitas Diversas</h5>
+            </a>
+        </section>
+        <br>
+        <section id="footerLinks" class="d-flex justify-content-around">
+            <a href="">
+                <h5>Politica de privacidade</h5>
+            </a>
+            <a href="">
+                <h5>Termos de uso</h5>
+            </a>
+        </section>
+        <br>
+        <hr>
+        <!-- logo footer -->
+        <div id="logoFooter"><img src="imagens/RECEITAS PELO MUNDO.png" alt=""></div>
+        <section id="footerLinks" class="d-flex justify-content-around">
+            <a href="">
+                <h6>Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de
+                    Americana e tem como a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS</h6>
+            </a>
+        </section>
+        <br>
+    </footer>
+</body>
+
+</html>

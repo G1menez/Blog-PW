@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta name="description" content="receitas">
+  <meta name="keywords" content="receitas">
+  <meta name="author" content="Pietro Gimenez, Pedro Rodrigues, Pedro Zago">
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Receitas pelo mundo</title>
+  <link rel="shortcut icon" href="imagens/RECEITAS PELO MUNDO.png" type="image/x-icon"> <!-- Logo da página -->
+  <link rel="stylesheet" href="estilo.css">
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet">
+  <link href="https://getbootstrap.com/docs/5.3/assets/css/docs.css" rel="stylesheet">
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</head>
+
+<body>
+  <header>
+    <!-- header responsivo -->
+    <nav class="navbar navbar-dark navbar-fixed-top navbar-expand-md">
+        <div class="container-fluid">
+            <a class="navbar-brand me-auto" href="#">Receitas pelo mundo</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="offcanvas"
+                data-bs-target="#offcanvasDarkNavbar" aria-controls="offcanvasDarkNavbar"
+                aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="offcanvas offcanvas-end text-bg-dark" tabindex="-1" id="offcanvasDarkNavbar"
+                aria-labelledby="offcanvasDarkNavbarLabel">
+                <div class="offcanvas-header">
+                    <h5 class="offcanvas-title" id="offcanvasDarkNavbarLabel">Receitas Pelo Mundo</h5>
+                    <button type="button" class="btn-close btn-close-white" data-bs-dismiss="offcanvas"
+                        aria-label="Close"></button>
+                </div>
+                <div class="offcanvas-body">
+                    <ul class="navbar-nav justify-content-center flex-grow-1 pe-3 nav-underline">
+                        <li class="nav-item">
+                            <a class="nav-link active mx-lg-2" aria-current="page" href="index.html">Home</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="sobre.html">Quem somos: </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="contato.html">Contate-nos </a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link mx-lg-2" href="jogo.html">jogo js</a>
+                        </li>
+                </div>
+            </div>
+            <a href="#"><img id="Logo" src="imagens/RECEITAS PELO MUNDO.png" alt=""></a>
+        </div>
+    </nav>
+</header>
+  <main>
+    <!-- section conteudo receita pra mobile -->
+    <section id="conteudo-moba">
+      <h1 class="central">Como Fazer Bolinho de Arroz:</h1>
+      <img src="imagens/Bolinho de arroz.jpg" alt="" class="img_rec">
+      <!-- accordion ingredientes e passo a passo -->
+      <div class="accordion" id="accordionExample">
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+              aria-expanded="true" aria-controls="collapseOne">
+              <h3>Ingredientes:</h3>
+            </button>
+          </h2>
+          <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- ingredientes -->
+              <h5>Bolinho de Arroz:</h5>
+              <li>2 xícaras (chá) de arroz cozido
+              </li>
+              <li>1 colher (sopa) de fermento em pó
+              </li>
+              <li>1 xícara (chá) de farinha de trigo
+              </li>
+              <li>2 ovos
+              </li>
+              <li>100 ml de leite
+              </li>
+              <li>100 gramas de queijo muçarela
+              </li>
+              <li>2 colheres (sopa) de queijo parmesão ralado
+              </li>
+              <li>tempero a gosto
+              </li>
+              </ul>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header">
+            <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+              data-bs-target="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+              <h3>Modo de Preparo</h3>
+            </button>
+          </h2>
+          <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+            <div class="accordion-body">
+              <!-- passo a passo -->
+              <h5>Modo de preparo</h5>
+              <ol>
+                <li>Em uma vasilha, misture o arroz, o leite, os ovos, os queijos e temperos a gosto;
+                </li>
+                <li>Acrescente a farinha de trigo aos poucos até dar consistência;
+                </li>
+                <li>Coloque o fermento por último e aqueça o óleo em uma panela com fundo grosso;
+                </li>
+                <li>Com a panela no fogo baixo, coloque os bolinhos e frite com cuidado;
+                </li>
+                <li>Depois de fritos, sirva-os!
+                </li>
+              </ol>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- section conteudo receitas tablet e Desktop -->
+    <section id="conteudo-tablet" class="quem">
+      <h1 class="central">Como Fazer Bolinho de Arroz</h1>
+      <img src="imagens/Bolinho de arroz.jpg" alt="" class="img_rec">
+      <!-- article pra colocar flex wrap -->
+      <article class="flex_wrap">
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h2 class="accordion-header">
+              <button class="accordion-button" type="button" data-bs-toggle="collapse" data-bs-target="#collapseOne"
+                aria-controls="collapseOne">
+                <!-- ingredientes -->
+                <h3>Ingredientes:</h3>
+              </button>
+            </h2>
+            <div id="collapseOne" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <h5>Bolinho de Arroz:</h5>
+                <li>2 xícaras (chá) de arroz cozido
+                </li>
+                <li>1 colher (sopa) de fermento em pó
+                </li>
+                <li>1 xícara (chá) de farinha de trigo
+                </li>
+                <li>2 ovos
+                </li>
+                <li>100 ml de leite
+                </li>
+                <li>100 gramas de queijo muçarela
+                </li>
+                <li>2 colheres (sopa) de queijo parmesão ralado
+                </li>
+                <li>tempero a gosto
+                </li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="accordion" id="accordionExample">
+          <div class="accordion-item">
+            <h3 class="accordion-header">
+              <button class="accordion-button collapsed" type="button" data-bs-toggle="collapse"
+                data-bs-target="#collapseTwo" aria-controls="collapseTwo">
+                <h3>Modo de Preparo</h3>
+              </button>
+            </h3>
+            <div id="collapseTwo" class="accordion-collapse collapse" data-bs-parent="#accordionExample">
+              <div class="accordion-body">
+                <!-- modo de preparo -->
+                <h5>Modo de preparo</h5>
+                <ol>
+                  <li>Em uma vasilha, misture o arroz, o leite, os ovos, os queijos e temperos a gosto;
+                  </li>
+                  <li>Acrescente a farinha de trigo aos poucos até dar consistência;
+                  </li>
+                  <li>Coloque o fermento por último e aqueça o óleo em uma panela com fundo grosso;
+                  </li>
+                  <li>Com a panela no fogo baixo, coloque os bolinhos e frite com cuidado;
+                  </li>
+                  <li>Depois de fritos, sirva-os!
+                  </li>
+                </ol>
+              </div>
+            </div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+  <footer>
+    <!-- links foooter -->
+    <h3 class="central">Links Uteis</h3>
+    <br>
+    <section id="footerLinks" class="d-flex justify-content-around">
+      <a href="">
+        <h5>(19) 99354-1162</h5>
+      </a>
+      <a href="">
+        <h5>Receitas deliciosas</h5>
+      </a>
+      <a href="">
+        <h5>Receitas Diversas</h5>
+      </a>
+    </section>
+    <br>
+    <section id="footerLinks" class="d-flex justify-content-around">
+      <a href="">
+        <h5>Politica de privacidade</h5>
+      </a>
+      <a href="">
+        <h5>Termos de uso</h5>
+      </a>
+    </section>
+    <br>
+    <hr>
+    <!-- logo footer -->
+    <div id="logoFooter"><img src="imagens/RECEITAS PELO MUNDO.png" alt=""></div>
+    <section id="footerLinks" class="d-flex justify-content-around">
+      <a href="">
+        <h6>Este projeto é desenvolvido em conjunto com a disciplina de Programação Web I da Etec Polivalente de
+          Americana e tem como a finalidade de estudar e aprofundar os conhecimentos em HTML, CSS e JS</h6>
+      </a>
+    </section>
+    <br>
+  </footer>
+</body>
+
+</html>
