@@ -1,43 +1,71 @@
-*{
+/* css padrão */
+* {
     padding: 0;
     margin: 0;
     overflow-x: hidden;
 }
-.game{
+
+/* tamanho e borda do jogo */
+.game {
     width: 500px;
     height: 200px;
     border: 1px solid black;
     margin: auto;
 }
-#character{
+
+/* tamanho e posição do hamburguer */
+#character {
     width: 50px;
     height: 50px;
-    position:relative;
+    position: relative;
     top: 150px;
 }
-.animate{
+
+/* animação hamburguer */
+.animate {
     animation: jump 0.3s linear;
 }
-@keyframes jump{
-    0%{top: 150px;}
-    30%{top: 100px;}
-    70%{top: 100px;}
-    100%{top: 150px;}
+
+/* keyframes  do pulo */
+@keyframes jump {
+    0% {
+        top: 150px;
+    }
+
+    30% {
+        top: 100px;
+    }
+
+    70% {
+        top: 100px;
+    }
+
+    100% {
+        top: 150px;
+    }
 }
 
-#block{
-    background-color: blue;
+/* tamanho posição animação da boca */
+#block {
     width: 20px;
     height: 20px;
     position: relative;
-    top: 130px;
-    left: 500px;
+    top: 150px;
     animation: block 1s infinite linear;
 }
-@keyframes block{
-    0%{left: 500px}
-    100%{left: -20px}
+
+/* keyframes da boca */
+@keyframes block {
+    0% {
+        left: 500px
+    }
+
+    100% {
+        left: -20px
+    }
 }
-p{
+
+/* alinha o texto da pontuação */
+p {
     text-align: center;
 }

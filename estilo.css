@@ -1,195 +1,234 @@
-*
-{
+/* css padrão pagina */
+* {
     margin: 0;
     padding: 0;
 }
+
+/* media queries tablet/desktop */
 @media (min-width: 576px) {
-    .img_rec
-    {
+
+    /* css img receita */
+    .img_rec {
         width: 80%;
         margin-left: 10%;
         border-radius: 50px;
         margin-bottom: 20px;
     }
-    #logoCont
-{
-    width: 60%;
-    margin-left: 20%;
-}
-    .accordion
-    {
+
+    /* logo contato */
+    #logoCont {
+        width: 60%;
+        margin-left: 20%;
+    }
+
+    /* accordio receitas */
+    .accordion {
         width: 40%;
         display: block;
         margin-bottom: 30px;
     }
-    .quem .flex_wrap
-    {
+
+    /* flex wrap da pagina quem somos */
+    .quem .flex_wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-        .card-img-top
-    {
+
+    /* tamanho imagem de cima do card */
+    .card-img-top {
         height: 250px;
     }
-    #car-banner
-    {
+
+    /* carrousel card */
+    #car-banner {
         margin-top: 1%;
         width: 70%;
         margin-left: 15%;
         padding-left: 5%;
         padding-right: 5%;
     }
-    .flex_wrap
-    {
+
+    /* flex wrap maioria das paginas */
+    .flex_wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: space-around;
 
     }
-    #conteudo-tablet .card
-    {
+
+    /* define tamanho e posição do card do conteudo tablet */
+    #conteudo-tablet .card {
         width: 45%;
         margin-bottom: 20px;
     }
-    #conteudo-moba
-    {
+
+    /* tira o display do id conteudo moba*/
+    #conteudo-moba {
         display: none;
     }
 }
+
+/* css pra desktop */
 @media (min-width: 992px) {
-    .img_rec
-    {
+
+    /* css para aproximar main do index */
+    #ind {
+        margin-top: -18px;
+    }
+
+    /* define tamanho e posição da imagem na pagina de receitas */
+    .img_rec {
         width: 25%;
         margin-left: 37.5%;
         border-radius: 50px;
         margin-bottom: 20px;
     }
-    .accordion
-    {
+
+    /* tamanho accordion pagina receitas */
+    .accordion {
         width: 30%;
         display: block;
         margin-bottom: 30px;
     }
-    
-    .flex_wrap
-    {
+
+    /* flex wrap pra desktop */
+    .flex_wrap {
         display: flex;
         flex-wrap: wrap;
         justify-content: center;
     }
-    .card-img-top
-    {
+
+    /* altura imagem de cima do card */
+    .card-img-top {
         height: 250px;
     }
-    #car-banner
-    {
+
+    /* tamanho e posição carrousel de card */
+    #car-banner {
         width: 50%;
         margin-top: 1%;
         margin-left: 25%;
         padding-left: 10%;
         padding-right: 10%;
     }
-    #conteudo-tablet .card
-    {
+
+    /* tamanho card pra desktop */
+    #conteudo-tablet .card {
         width: 20%;
         margin-left: 20px;
         margin-bottom: 20px;
     }
 }
-@media (max-width: 576px)
-{
-    #logoCont
-{
-    width: 60%;
-    margin-left: 0px;
-}
-    .img_rec
-    {
+
+/* css pra mobile */
+@media (max-width: 576px) {
+
+    /* logo contato */
+    #logoCont {
+        width: 60%;
+        margin-left: 0px;
+    }
+
+    /* tamanho e posição da imagem da pagina receitas */
+    .img_rec {
         width: 90%;
         margin-left: 5%;
         border-radius: 50px;
         margin-bottom: 20px;
     }
-    #conteudo-moba
-{
-    margin: 10px 5%;
-}
-#conteudo-moba .card{
-    margin-bottom: 10px;
-}
-    #car-banner
-    {
+
+    /* margem da section conteudo moba */
+    #conteudo-moba {
+        margin: 10px 5%;
+    }
+
+    /* margem do card da section conteudo moba */
+    #conteudo-moba .card {
+        margin-bottom: 10px;
+    }
+
+    /* carrousel card mobile tamanho */
+    #car-banner {
         width: 99%;
         margin-left: 1%;
         padding: 0%;
     }
-.card-img-top
-{
-    height: 200px;
-}
-#conteudo-tablet
-{
-    display: none;
-}
+
+    /* tamanho img de cima do card */
+    .card-img-top {
+        height: 200px;
+    }
+
+    /* tira o display da section conteudo-tablet */
+    #conteudo-tablet {
+        display: none;
+    }
 }
 
-.navbar
-{
+/* header */
+header {
+    background-color: #4F6F52;
+}
+
+.navbar {
     background-color: #4F6F52;
     color: white;
 }
-.sidebar
-{
+
+.sidebar {
     background-color: #4F6F52;
     color: white;
 }
-#Logo
-{
+
+#Logo {
     width: 100px;
 }
-.nav-link
-{
-    color:#E8DFCA
+
+.nav-link {
+    color: #E8DFCA
 }
 
-.central{
+/* classe css para centralizar texto */
+.central {
     text-align: center;
-    margin-bottom:20px;
+    margin-bottom: 20px;
     margin-top: 20px;
 }
-footer
-{
+
+/* Conteudos footer */
+footer {
     background-color: #4F6F52;
     text-align: center;
     color: white;
     margin: 1px;
 }
-#footerLinks a
-{
+
+#footerLinks a {
     color: white;
     text-decoration: none;
 }
+
 #logoFooter {
     text-align: center;
     padding-top: 20px;
-  }
-  #logoFooter img
-  {
+}
+
+#logoFooter img {
     margin-top: -40px;
     width: 200px;
-  }
-header{
-    background-color: #4F6F52;
 }
-#ind
-{ margin-top: -18px;
-    background-color: #F1F0E8;
-}
-footer .central
-{
+
+footer .central {
     margin-top: 0px;
 }
+
+/* cor do main */
+main {
+    background-color: #F1F0E8;
+}
+
+/* forms da pagina contato */
 .caixa {
     z-index: -1;
     margin-left: 10px;
@@ -197,6 +236,7 @@ footer .central
     height: auto;
     margin-top: -40px;
 }
+
 #entrar_em_contato {
     text-align: center;
     font-size: 25px;
@@ -212,6 +252,7 @@ footer .central
     padding-bottom: 30px;
     width: 80%;
 }
+
 #entrar_em_contato input {
     width: 200px;
     height: 40px;
@@ -220,101 +261,118 @@ footer .central
     border-radius: 20px;
     margin-top: 20px;
 }
+
 #entrar_em_contato a {
     background-color: #7eb3e2;
     padding: 10px;
     color: purple;
     border-radius: 10px;
     transition: background-color 0.6s ease-in-out, color 0.6s ease-in-out;
-}   
-.quem .card-img-top
-{
+}
+
+.quem .card-img-top {
     height: 400px;
 }
+
 body {
-	background: #e8e8e8;
+    background: #e8e8e8;
 }
+
 .form-area {
-	padding-top: 7%;
+    padding-top: 7%;
 }
+
 .row.single-form {
-	box-shadow: 0 2px 20px -5px rgba(0,0,0,0.5);
+    box-shadow: 0 2px 20px -5px rgba(0, 0, 0, 0.5);
 }
+
 .esq {
     background-color: #4F6F52;
-	padding: 200px 98px;
+    padding: 200px 98px;
 }
+
 .esq h2 {
-	color: #fff;
-	font-weight: 700;
-	font-size: 48px;
+    color: #fff;
+    font-weight: 700;
+    font-size: 48px;
 }
+
 .esq h2 span {
-	font-weight: 100;
+    font-weight: 100;
 }
-.single-form{
+
+.single-form {
     background: #fff;
 }
+
 .dir {
-	padding: 70px 100px;
-	position: relative;
+    padding: 70px 100px;
+    position: relative;
 }
+
 .dir i {
-	position: absolute;
-	font-size: 80px;
-	left: -27px;
-	top: 40%;
-	color: #fff;
+    position: absolute;
+    font-size: 80px;
+    left: -27px;
+    top: 40%;
+    color: #fff;
 }
+
 .form-control {
-	border: 2px solid #000;
+    border: 2px solid #000;
 }
+
 .dir button {
-	border: none;
-	border-radius: 0;
-	background: #252525;
-	width: 180px;
-	color: #fff;
-	padding: 15px 0;
-	display: inline-block;
-	font-size: 16px;
-	margin-top: 20px;
-	cursor: pointer;
+    border: none;
+    border-radius: 0;
+    background: #252525;
+    width: 180px;
+    color: #fff;
+    padding: 15px 0;
+    display: inline-block;
+    font-size: 16px;
+    margin-top: 20px;
+    cursor: pointer;
 }
-.dir button:hover{
+
+.dir button:hover {
     background-color: #252525;
 }
 
 
 /* resposividade contate-nos */
 
-@media (min-width:576px) and (max-width:991px){
+@media (min-width:576px) and (max-width:991px) {
     .dir i {
-	top: -52px;
-	transform: rotate(90deg);
-	left: 50%;
-}
+        top: -52px;
+        transform: rotate(90deg);
+        left: 50%;
+    }
 }
 
-@media (max-width:767px){
+@media (max-width:767px) {
     .esq {
-  padding: 90px 15px;
-  text-align: center;
-}
-.esq h2 {
-  font-size: 25px;
-}
-.dir {
-  padding: 25px;
-}
-.dir i {
-  top: -52px;
-  transform: rotate(90deg);
-  left: 46%;
-}
+        padding: 90px 15px;
+        text-align: center;
+    }
+
+    .esq h2 {
+        font-size: 25px;
+    }
+
+    .dir {
+        padding: 25px;
+    }
+
+    .dir i {
+        top: -52px;
+        transform: rotate(90deg);
+        left: 46%;
+    }
+
     .dir button {
-	width: 150px;
-	padding: 12px 0;
-}
-    
+        width: 150px;
+        padding: 12px 0;
+    }
+
 }
